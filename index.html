@@ -6,133 +6,102 @@
     .page {
       height: 297mm;
       width: 215mm;
+      page-break-after: always;
+      margin-bottom: 4mm;
     }
-
     .labels {
       margin: 0 0;
       overflow: hidden;
-    }
-
-    .row {
       width: 100%;
     }
-
-    .row div {
+    .labels div {
       display:flex;
       justify-content: center;
       align-items:center;
       float: left;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: bolder;
       text-transform: uppercase;
       text-align: center;
       font-size: 19px;
       width: 35mm;
       height: 35mm;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 2mm;
-      margin-bottom: 0mm;
+      margin: 0;
       overflow: hidden;
       border-radius: 50%;
       border: 4mm solid black;
     }
-
-    .row div.red {
-      color: red;
-      border: 4mm solid red;
-    }
-
-    .row div.green {
-      color: green;
-      border: 4mm solid green;
-    }
-
-    .row div.gold {
-      color: gold;
-      border: 4mm solid gold;
-    }
-
-    .row div.brown {
-      color: brown;
-      border: 4mm solid brown;
-    }
-
-    .row div.tan {
-      color: sienna;
-      border: 4mm solid sienna;
-    }
-
-    .page .row div,
-    .page .row div.red,
-    .page .row div.green,
-    .page .row div.gold,
-    .page .row div.brown,
-    .page .row div.tan
-    {
-      color: black;
+    .labels.tin div {
+      font-size: 32px;
+      width: 58mm;
+      height: 58mm;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 50%;
       border: 4mm solid black;
+      padding: 2mm;
     }
     </style>
   </head>
   <body>
     <div class="page">
       <div class="labels">
-        <div class='row'>
-          <div class='gold'>Mango Powder</div>
-          <div class='brown'>Nutmeg</div>
-          <div class='red'>Smoked Paprika</div>
-          <div class='green'>Cardamom Seeds</div>
-          <div class='green'>Mixed Herbs</div>
-        </div>
-
-        <div class='row'>
-          <div class='brown'>Mixed Spice</div>
-          <div class='green'>Marjoram</div>
-          <div class='green'>Thyme</div>
-          <div class='tan'>Mace</div>
-          <div class='gold'>Saffron</div>
-        </div>
-
-        <div class='row'>
-          <div class='gold'>Mustard Seeds</div>
-          <div>Black Mustard Seeds</div>
-          <div>White Pepper</div>
-          <div class='green'>Sage</div>
-          <div class='green'>Cardamom Pods</div>
-        </div>
-
-        <div class='row'>
-          <div class='brown'>Cinnamon Powder</div>
-          <div class='brown'>Five <br>Spice</div>
-          <div class='brown'>Ground Cumin</div>
-          <div class='green'>Ground Coriander</div>
-          <div class='gold'>Turmeric</div>
-        </div>
-
-        <div class='row'>
-          <div class='red'>Cayenne</div>
-          <div class='green'>Basil</div>
-          <div>Onion Seeds</div>
-          <div class='green'>Mint</div>
-          <div>Cloves</div>
-        </div>
-
-        <div class='row'>
-          <div class='green'>Ground Coriander</div>
-          <div class='gold'>Fenugreek Seeds</div>
-          <div class='brown'>Garam Masala</div>
-          <div class='red'>Chillies</div>
-          <div class='gold'>Ginger</div>
-        </div>
-
-        <div class='row'>
-          <div>Black Pepper</div>
-          <div class='green'>Ajwain Seeds</div>
-          <div class='green'>Lemon Grass</div>
-          <div class='gold'>Asfoetida</div>
-          <div class='red'>Chilli Powder</div>
-        </div>
+        <div>Mango Powder</div>
+        <div>Nutmeg</div>
+        <div>Smoked Paprika</div>
+        <div>Cardamom Seeds</div>
+        <div>Oregano</div>
+        <div>Mixed Spice</div>
+        <div>Marjoram</div>
+        <div>Thyme</div>
+        <div>Mace</div>
+        <div>Saffron</div>
+        <div>Mustard Seeds</div>
+        <div>Black Mustard Seeds</div>
+        <div>White Pepper</div>
+        <div>Sage</div>
+        <div>Cardamom Pods</div>
+        <div>Cinnamon Powder</div>
+        <div>Five <br>Spice</div>
+        <div>Ground Cumin</div>
+        <div>Ground Coriander</div>
+        <div>Turmeric</div>
+        <div>Cayenne</div>
+        <div>Basil</div>
+        <div>Onion Seeds</div>
+        <div>Mint</div>
+        <div>Cloves</div>
+        <div>Fenugreek Leaves</div>
+        <div>Fenugreek Seeds</div>
+        <div>Garam Masala</div>
+        <div>Chillies</div>
+        <div>Ginger</div>
+        <div>Black Pepper</div>
+        <div>Ajwain Seeds</div>
+        <div>Lemon Grass</div>
+        <div>Asfoetida</div>
+        <div>Chilli Powder</div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="labels tin">
+        <div>Ras el hanout</div>
+        <div>Curry Leaves</div>
+        <div>Bay Leaves</div>
+        <div>Fennel Seeds</div>
+        <div>Fenugreek Seeds</div>
+        <div>Kafir Lime Leaves</div>
+        <div>Caraway Seeds</div>
+        <div>Cinnamon Sticks</div>
+        <div>All Spice</div>
+        <div>Corriander Seeds</div>
+        <div>Cumin Seeds</div>
+        <div>Black Cumin Seeds</div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="labels tin">
+        <div>Star Anise</div>
       </div>
     </div>
   </body>
